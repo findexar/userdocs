@@ -1,0 +1,23 @@
+# Agent (chat)
+
+The **Agent** tab is where you **talk to your agent** in plain language. The agent can call **tools** provided by apps you’ve **connected** to this agent in **[Config](/agent/config)**.
+
+## Which agent you’re chatting with
+
+Chat always uses the **currently selected agent**. That selection is controlled in **[Config](/agent/config)** (“**Select Agent**”). If you change agents there, the **Agent** tab starts using the new one (including its **system message** and **connected apps**).
+
+## Tools and chat
+
+- When the model decides to use a **tool** (for example “look up X” or “run action Y”), Agentsyx runs that tool against the **app’s** MCP server on your behalf.
+- Only apps **connected** to this agent (in Config) contribute tools—unless you’re in a special **ad-hoc** session where an app is open but not fully persisted; see **[Agent workspace overview](/agent)**.
+
+## When the UI switches to **App**
+
+Some tools return an **embedded app panel** (a visual UI instead of plain text). In that case the product often **switches you to the [App](/agent/app-panel) tab** so you can interact with the panel (maps, forms, dashboards, etc.). When you’re done, you can return to **Agent** to keep chatting.
+
+## If something looks stuck
+
+- **Loading** — First visit may show **Loading agent…** while your selected agent is fetched.
+- **Errors** — If the agent or tools fail to load, you may see an error state; try again after a moment, or check **[Config](/agent/config)** that an agent is selected and apps are connected.
+
+← [Agent workspace](/agent) · [Config](/agent/config) · [App](/agent/app-panel)

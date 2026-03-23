@@ -1,0 +1,69 @@
+# Config
+
+The **Config** tab is titled **Agent config** in the UI. Everything here is about **which agent you’re using**, **how it behaves**, and **which apps (and tools) are wired to it**.
+
+## Select Agent
+
+At the top, **Select Agent** lists every agent you can use. Each entry shows a **name** and a **scope**:
+
+- **user** — Your personal agent.
+- **team** — Tied to a team (when your account has team-scoped agents).
+
+Choosing a different agent **updates chat and connections** for the **[Agent (chat)](/agent/chat)** tab.
+
+### Add new agent
+
+Pick **+ Add new agent** to open the **Create New Agent** form.
+
+1. **Scope**
+   - **User** — Agent belongs to you.
+   - **Team** — Agent belongs to a team. You must pick a **team** from the list.  
+     Only teams where you’re a **team admin** appear. If the list is empty, you can’t create a **team** agent until you have an eligible team.
+
+2. **Name** (required) — Shown in the selector and in the **[Agent](/agent/chat)** header.
+
+3. **Description** (optional) — Notes for yourself or teammates about what this agent is for.
+
+4. **System message** (optional) — Instructions for how the agent should behave in **chat** (tone, constraints, what to prioritize). This is **your** prompt layer on top of the model.
+
+5. **Create Agent** — Creates the agent, selects it, and clears the form.
+
+Close the form with **X** if you change your mind.
+
+## Agent profile (after you select an agent)
+
+With an agent selected (and not in the “create” form), you’ll see:
+
+- **Name** — Required. Empty name can’t be saved.
+- **Description** — Optional longer text.
+- **System message** — Optional instructions (same idea as when creating).
+
+**Save Changes** only enables when something **changed** and **Name** is non-empty. Saving updates the agent for future chats.
+
+## Available Apps (connect apps to *this* agent)
+
+This section lists **apps from creators you’re subscribed to** (and sometimes an app you opened **ad-hoc** for this session).
+
+- **Toggle on** — Connects that app to **this** agent so its **tools** (and related behavior) show up in **[Agent (chat)](/agent/chat)**.  
+  The first time you connect, Agentsyx may also **add the app to your personal pool** of apps if it wasn’t there yet.
+
+- **Toggle off** — Disconnects the app from **this** agent only (it doesn’t necessarily cancel a subscription—see **[Subscriptions](/subscriptions)**).
+
+### Expand an app row
+
+Click the **row header** (chevron) to expand. You’ll see:
+
+- **Refresh** — Reloads **tools**, **resources**, and **prompts** from the live app.
+- **Tools** — Names, short descriptions, and sometimes **input shape** (what the tool expects). If the list is empty, the app may expose no tools or the fetch failed (try **Refresh**).
+- **Resources** — URIs and metadata the app exposes.
+- **Prompts** — Named prompts the app offers.
+
+### **ad-hoc** label
+
+If you opened an app from a **link** or similar path **before** it’s in your normal pool, Config may show **ad-hoc** instead of a connect **switch**. Use the **Creator** tab or your creator’s flow to **subscribe / add** the app properly, then configure it here.
+
+### No apps listed?
+
+You’ll see a short message to **subscribe** to a creator in the **[Creator](/agent/creator-tab)** tab first. Until you have entitlements, **Available Apps** can be empty.
+
+← [Agent workspace](/agent) · [Agent (chat)](/agent/chat) · [Creator](/agent/creator-tab)
