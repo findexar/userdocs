@@ -1,0 +1,28 @@
+{
+  "name": "agentsyx-a6-user-docs",
+  "version": "0.0.1",
+  "description": "Agentsyx A6 end-user help (Nextra)",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --port 3010",
+    "build": "next build",
+    "start": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/findexar/userdocs.git"
+  },
+  "author": "Agentsyx",
+  "license": "MIT",
+  "dependencies": {
+    "next": "13.0.6",
+    "nextra": "2.2.14",
+    "nextra-theme-docs": "2.2.14",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "18.11.10",
+    "typescript": "^4.9.3"
+  }
+}
