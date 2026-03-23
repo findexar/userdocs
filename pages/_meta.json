@@ -1,3 +1,8 @@
 {
-  "index": "Welcome"
+  "index": "Welcome",
+  "overview": "Overview",
+  "agent": "Agent workspace",
+  "subscriptions": "Subscriptions",
+  "usage": "Usage",
+  "b2b-future": "B2B (future)"
 }
